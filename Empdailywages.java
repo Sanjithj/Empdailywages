@@ -2,12 +2,17 @@ package employeeUC1;
 
 public class Empdailywages {
 	
-		public static void main(String[] args) {
+		public static void main(String[]args) {
 			int IS_FULL_TIME = 1;
+			int Emp_rate_per_hrs = 20;
+			int emphrs = 0;
+			int empwage = 0;
 			double empCheck = Math.floor(Math.random()*10)%2;
 			if(empCheck == IS_FULL_TIME)
-				System.out.println("Employee is Present");
+				emphrs = 8;
 			else
-				System.out.println("Employee is absent");
+				emphrs = 0;
+			empwage = emphrs * Emp_rate_per_hrs;
+			System.out.println("Emp wage: "  + empwage);
 		}
 	}
